@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="JS/main.js"></script>
+    </head>
+
+    <body>
+
+        <p id="Test" onclick="my_Function()">Click Here!</p>
+        <p id="Test" onclick="not_Number()">Click me!</p>
+        <p id="Test" onclick="Number()">Click!</p>
+
+        <p id="demo"></p>
+
+        <script>
+        let x = 6;
+        let y = 3;
+        
+        document.getElementById("demo").innerHTML = 
+        (x < 10 && y > 1) + "<br>" + 
+        (x < 10 && y < 1);
+        </script>
+
+        <p id="Not" onclick="not_Function()">Click for Result!</p>
+        <p id="Not" onclick="not()">Click me!</p>
+
+    </body>
+</html>
