@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="JS/main.js"></script>
+</head>
+
+<body>
+
+    <p id="Concatenate"></p>
+    <button onclick="full_Sentence()">Click to see sentence.</button>
+
+    <p id="Slice"></p>
+    <button onclick="Slice_Method()">Click here!</button>
+
+    <p id="toUpperCase"></p>
+
+    <script>
+
+    let text = "Hi Everyone!";
+    let result = text.toUpperCase();
+
+    document.getElementById("toUpperCase").innerHTML = result;
+
+    </script>
+
+    <p id="search"></p>
+
+    <script>
+    let text2 = "I want to stay home and sleep. But I have to work."
+    let position = text.search("home");
+
+    document.getElementById("search").innerHTML = position;
+    </script>
+
+    <p id="Numbers_to_string"></p>
+    <button onclick="string_Method()">Click Click!</button>
+
+    <p id="Precision"></p>
+    <button onclick="precision_Method()">Click me!</button>
+
+    <p id="toFixed"></p>
+    <button onclick="toFixed_Method()">Click!</button>
+
+    <p id="valueOf"></p>
+    <button onclick="valueOf_Method()">Click here!</button>
+
+</body>
+</html>
