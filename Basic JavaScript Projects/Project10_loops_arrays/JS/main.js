@@ -1,7 +1,7 @@
 function Call_Loop() {
     var Digit = "";
-    var x = 1;
-    while (x < 11) {
+    var x = 5;
+    while (x < 21) {
         Digit += "<br>" + x;
         x++;
     }
