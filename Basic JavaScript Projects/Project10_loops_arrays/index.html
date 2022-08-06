@@ -6,9 +6,22 @@
 </head>
 
 <body>
-
+    
     <p id="Loop"></p>
     <button onclick="Call_Loop()">Click here to execute the loop.</button>
+
+    <p>Find the length of "Nice Work!":</p>
+    <p id="length"></p>
+
+    <script>
+    let text = "Nice Work!";
+    let length = text.length;
+
+    document.getElementById("length").innerHTML = length;
+    </script>
+
+    <p id="List_of_Instruments"></p>
+    <button onclick="for_Loop()">Click here.</button>
 
 </body>
 </html>

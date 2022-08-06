@@ -7,3 +7,13 @@ function Call_Loop() {
     }
     document.getElementById("Loop").innerHTML=Digit;
 }
+
+var Instruments = ["Guitar", "Drums", "Piano", "Bass", "Violin", "Trumpet", "Flute"];
+var Content = "";
+var y;
+function for_Loop() {
+    for (y=0; y<Instruments.length; y++) {
+        Content += Instruments[y] + "<br>";
+    }
+    document.getElementById("List_of_Instruments").innerHTML = Content;
+}
