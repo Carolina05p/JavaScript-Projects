@@ -1,4 +1,4 @@
-function Call_Loop() {
+function Call_Loop() { //Loop function
     var Digit = "";
     var x = 5;
     while (x < 21) {
@@ -18,14 +18,14 @@ function for_Loop() {
     document.getElementById("List_of_Instruments").innerHTML = Content;
 }
 
-function array_Function() {
+function array_Function() { //Array function
     var Dog_Picture = [];
     Dog_Picture [0] = "playing";
     Dog_Picture [1] = "sleeping";
     document.getElementById("Array").innerHTML = "Here, the dog is " + Dog_Picture [1] + ".";
 }
 
-function constant_function() {
+function constant_function() { //Constant function
     const Animal = {type:"dog", name:"Brandy", color:"brown"};
     Animal.color = "black";
     Animal.price = "$3,000";
@@ -43,12 +43,12 @@ let x = 2;
 
 // Here x is 10
 
-function myFunction() {
+function myFunction() { //Using return
     return Math.PI;
   }
   document.getElementById("return").innerHTML = myFunction();
 
-  let car = {
+  let car = { //Objecct using let
     make:"Nissan",
     model:"Rogue",
     year:"2018",
