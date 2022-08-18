@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     html {
+        scroll-behavior: smooth;
+    }
+
+    #section1 {
+        height: 600px;
+        background-color: rgb(27, 109, 139);
+    }
+
+    #section2 {
+        height: 600px;
+        background-color: rgb(59, 183, 169);
+    }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slides.css">    
+
+</head>
+
+<body>
+    
+    <div class="sticky">I will stick to the screen!</div>
+
+    <h1>Smooth Scroll</h1>
+
+    <div class="main" id="section1">
+    <h2>Section 1</h2>
+        <p>Click to see section 2!</p>
+        <a href="#section2">Section 2 Below</a>
+    </div>
+
+    <div class="main" id="section2">
+        <h2>Section 2</h2>
+        <a href="#section1">Click Me to go to Section 1 Above</a>
+    </div>
+
+    <div id="slideshow">
+        <div>
+          <img src="prettyview.jpg" width="450" length="450">
+        </div>
+        <div>
+          <img src="purpleview.jpg" width="450" length="450">
+        </div>
+    </div>
+
+    <script>
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() { 
+        $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+        }, 3000);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    opacity: 1;
+    transition: 1s opacity;
+  }
+  
+  body.fade-out {
+    opacity: 0;
+    transition: none;
+  }
+
+  html {
+    background-color: rgb(59, 138, 178);
+  }
+
+div {
+  width: 100px;
+  height: 100px;
+  background: rgb(174, 57, 210);
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
