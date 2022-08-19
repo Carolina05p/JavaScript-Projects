@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Todo App</title>
+        <link rel="stylesheet" href="css/todo.css">
+    </head>
+    <body>
+        <input id="task"><button id="add">Add Item</button>
+        <hr>
+        <div id="todos"></div>
+
+        <h2>Create JSON string from a JavaScript object.</h2>
+
+        <p id="json"></p>
+
+        <script>
+        var obj = { "name":"Diana", "age":23, "city":"Chicago"};
+        var myJSON = JSON.stringify(obj);
+        document.getElementById("json").innerHTML = myJSON;
+        </script>
+
+        <p id="jparse"></p>
+
+        <script>
+        var obj = JSON.parse('{"firstName":"John", "lastName":"Cena"}');
+
+        document.getElementById("jparse").innerHTML = obj.firstName;
+        </script>
+
+        <h2>The localStorage Property</h2>
+
+        <p id="demo2"></p>
+
+        <script>
+        // Set Item
+        localStorage.setItem("lastname", "Smith");
+        // Retrieve
+        document.getElementById("demo2").innerHTML = localStorage.getItem("lastname");
+        </script>
+
+        <script src="js/todo.js"></script>
+
+        <footer>
+            <p>Author: Carolina Polanco<br>
+            <a href="mailto:carolina05pp@gmail.com">carolina05pp@gmail.com</a></p>
+          </footer>
+    </body>
+</html>
